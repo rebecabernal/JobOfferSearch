@@ -8,6 +8,7 @@ class Job extends Model
 {
     use HasFactory;
     protected $fillable = [
-    'entry',
+    'offers',
+    'updates',
     ];
 }
