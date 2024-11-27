@@ -9,7 +9,7 @@
                     <th scope="col">Workspace</th>
                     <th scope="col">Description</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Published</th>
+                    <th scope="col">Applied</th>
                     <th scope="col">Updated</th>
                 </tr>
             </th>
