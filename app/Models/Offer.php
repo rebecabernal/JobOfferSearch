@@ -8,9 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Offer extends Model
 {
     use HasFactory;
-    protected $fillable = [
-    'enterprise',
-    'description',
-    'status',
+    protected $fillable =
+    [
+        'title',
+        'enterprise',
+        'description',
+        'status',
     ];
+
+    public function feedback()
+    {
+        return $this->hasMany(Feedback::class);
+    }
 }
