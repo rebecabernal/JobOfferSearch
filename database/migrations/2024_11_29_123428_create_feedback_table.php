@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('feedback', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+
+            $table->foreingID('offers_id')->constrained('offers')->onDelete('cascade');
+            $table->string('news');
+            $table->timestaps();
+
         });
     }
 
