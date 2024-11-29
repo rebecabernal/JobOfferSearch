@@ -13,7 +13,7 @@ class Feedback extends Model
     protected $fillable =
     [
         'offer_id',
-        'comment'
+        'news'
     ];
 
     public function offer()
