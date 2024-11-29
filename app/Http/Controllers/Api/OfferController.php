@@ -13,14 +13,13 @@ class OfferController extends Controller
      */
     public function index() // Read
     {
-        $offers = Offer::get();
-        return response()->json($offers, 200);
+        return response()->json(Offer::all(), 200);
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create() // Create -> formulario
+    /* public function create() // Create -> formulario
     {
         //
     }
@@ -30,7 +29,15 @@ class OfferController extends Controller
      */
     public function store(Request $request) //Create mandar a la bbdd el request
     {
-        //
+
+        $offer = Offer::create([
+            'title' => $request->title,
+            'enterprise' => $request->enterprise,
+            'description' => $request->description,
+            'status' => $request->status,
+        ]);
+        $offer->save();
+        return response()->json($offer, 200); 
     }
 
     /**
@@ -38,13 +45,13 @@ class OfferController extends Controller
      */
     public function show(string $id) // cread by id
     {
-        //
+        return response()->json(Offer::find($id), 200);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id) // update -> formulario
+    /*public function edit(string $id) // update -> formulario
     {
         //
     }
@@ -54,7 +61,16 @@ class OfferController extends Controller
      */
     public function update(Request $request, string $id) //update mandar los cambios a la bbdd
     {
-        //
+        $offer = Offer::find($id);
+
+        $offer->update([
+            'title' => $request->title,
+            'enterprise' => $request->enterprise,
+            'description' => $request->description,
+            'status' => $request->status,
+        ]);
+        $offer->save();
+        return response()->json($offer, 200);
     }
 
     /**
@@ -62,6 +78,6 @@ class OfferController extends Controller
      */
     public function destroy(string $id) //delete
     {
-        //
+        Offer::find($id)->delete();
     }
 }
