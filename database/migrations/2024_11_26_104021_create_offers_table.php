@@ -15,9 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('enterprise');
             $table->string('description');
-            $table->string('status');
-            $table->string('applied');
-            $table->string('updated');
+            $table->boolean('status');
             $table->timestamps();
         });
     }

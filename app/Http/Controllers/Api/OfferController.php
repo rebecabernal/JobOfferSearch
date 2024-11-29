@@ -11,16 +11,16 @@ class OfferController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index() // Read
     {
         $offers = Offer::get();
-        return json('home', compact('offers'));
+        return response()->json($offers, 200);
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create() // Create -> formulario
     {
         //
     }
@@ -28,7 +28,7 @@ class OfferController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request) //Create mandar a la bbdd el request
     {
         //
     }
@@ -36,7 +36,7 @@ class OfferController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $id) // cread by id
     {
         //
     }
@@ -44,7 +44,7 @@ class OfferController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $id) // update -> formulario
     {
         //
     }
@@ -52,7 +52,7 @@ class OfferController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $id) //update mandar los cambios a la bbdd
     {
         //
     }
@@ -60,7 +60,7 @@ class OfferController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(string $id) //delete
     {
         //
     }

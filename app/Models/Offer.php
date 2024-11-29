@@ -9,7 +9,8 @@ class Offer extends Model
 {
     use HasFactory;
     protected $fillable = [
-    'offers',
-    'updates',
+    'enterprise',
+    'description',
+    'status',
     ];
 }
