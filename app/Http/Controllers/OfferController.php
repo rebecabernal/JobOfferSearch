@@ -28,7 +28,7 @@ class OfferController extends Controller
             $this->edit($request->id, 1);
             return Redirect::to(route('index'));
         }
-        $jobs = Offer::all();
+        $offers = Offer::all();
         return view('index', compact('offers'));
     }
 
