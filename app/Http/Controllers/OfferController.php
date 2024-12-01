@@ -11,7 +11,7 @@ class OfferController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
+    public function home(Request $request)
     {
        if ($request->action === 'delete')
         {
@@ -29,7 +29,7 @@ class OfferController extends Controller
             return Redirect::to(route('home'));
         }
         $offers = Offer::all();
-        return view('index', compact('offers'));
+        return view('home', compact('offers'));
     }
 
     /**
