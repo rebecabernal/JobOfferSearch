@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Models\Offer;
 use App\Models\Feedback;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -11,9 +12,9 @@ class FeedbackController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(string $id)
     {
-        return response()->json(Feedback::all(), 200);
+        return response()->json(Offer::find($id)->feedback, 200);
     }
 
     /**
@@ -27,22 +28,21 @@ class FeedbackController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request, string $id)
     {
         $feedback = Feedback::create([
-            'offers_id' => $request-> offers_id,
+            'offers_id' => (int)$id,
             'news' => $request->news,
         ]);
-        $feedback->save();
         return response()->json($feedback, 200); 
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $offerId, string $newsId)
     {
-        return response()->json(Feedback::find($id),200);
+        return response()->json(Offer::find($offerId)->feedback[(int)$newsId - 1],200);
     }
 
     /**
@@ -56,23 +56,22 @@ class FeedbackController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $offerId, string $newsId)
     {
-        $feedback = Feedback::find($id);
+        $feedback = Offer::find($offerId)->feedback[(int)$newsId - 1];
 
         $feedback->update([
             'offers_id' => $request-> offers_id,
             'news' => $request->news,
         ]);
-        $feedback->save();
         return response()->json($feedback, 200); 
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(string $offerId, string $newsId)
     {
-        Feedback::find($id)->delete();
+        Offer::find($offerId)->feedback[(int)$newsId - 1]->delete();
     }
 }
