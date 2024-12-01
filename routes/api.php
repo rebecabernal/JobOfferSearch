@@ -2,8 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\Api\OfferController;
+use App\Http\Controllers\Api\FeedbackController;
 
 Route::get('/offers', [OfferController::class, 'index'])->name('apiindex');
 Route::post('/offers', [OfferController::class, 'store'])->name('apistore');
