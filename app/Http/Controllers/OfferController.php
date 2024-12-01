@@ -16,17 +16,17 @@ class OfferController extends Controller
        if ($request->action === 'delete')
         {
             $this->destroy($request->id);
-            return Redirect::to(route('index'));
+            return Redirect::to(route('home'));
         }
         if ($request->action === 'pause')
         {
             $this->edit($request->id, 0);
-            return Redirect::to(route('index'));
+            return Redirect::to(route('home'));
         }
         if ($request->action === 'resume')
         {
             $this->edit($request->id, 1);
-            return Redirect::to(route('index'));
+            return Redirect::to(route('home'));
         }
         $offers = Offer::all();
         return view('index', compact('offers'));
