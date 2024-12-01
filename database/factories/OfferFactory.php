@@ -17,6 +17,7 @@ class OfferFactory extends Factory
     public function definition(): array
     {
         return [
+            // need to add title faker
             'enterprise' => $this->faker->company(),
             'description' => $this ->faker->realText($maxNbChars = 200),
             'status' => $this->faker->boolean(),
