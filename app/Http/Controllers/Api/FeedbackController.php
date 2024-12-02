@@ -31,7 +31,7 @@ class FeedbackController extends Controller
     public function store(Request $request, string $id)
     {
         $feedback = Feedback::create([
-            'offers_id' => (int)$id,
+            'offer_id' => (int)$id,
             'news' => $request->news,
         ]);
         return response()->json($feedback, 200); 
