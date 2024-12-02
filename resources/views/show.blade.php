@@ -2,14 +2,23 @@
 
 @section('content')
     <div class="offer">
-        <h2 class="offerTitle">Entry</h2>
+        <h2 class="offer->feedback">Entry</h2>
         <div class="offerTime">
-            <p>created: {{$offer['created_at']}}</p>
-            <p>update: {{$offer['updated_at']}}</p>
+            <table>
+                <th scope="col">Comments</th>
+                <th scope="col">Created</th>
+                <th scope="col">Updated</th>
+                @foreach ($offer->feedback as $news)
+                <tr>
+                    <td>{{$news->news}}</td>
+                    <td>{{$news->updated_at}}</td>
+                    <td>{{$news->created_at}}</td>
+                </tr>
+                @endforeach
+            </table>
         </div>
         <div class="offerContent">
             <p class="offerEntry">{{$offer['entry']}}</p>
-            <img class="offerImage" src="{{$offer['emotion']}}" alt=""/>
         </div>
     </div>
 @endsection
