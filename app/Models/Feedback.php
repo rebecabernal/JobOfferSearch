@@ -12,7 +12,7 @@ class Feedback extends Model
 
     protected $fillable =
     [
-        'offer_id',
+        'offers_id',
         'news'
     ];
 
