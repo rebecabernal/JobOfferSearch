@@ -22,9 +22,9 @@
                             <td>{{$offer->description}}</td>
                                 <td>
                                     @if ($offer->status===1)
-                                    Active
+                                    ✔️
                                     @else 
-                                    Inactive
+                                    ❌
                                     @endif
                                 </td>
                             <td>{{$offer->created_at}}</td>
