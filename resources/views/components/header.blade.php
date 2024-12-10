@@ -1,3 +1,3 @@
 <header>
-    <h1>Job Seach</h1>
+    <img src="{{asset('css/img/banner.png')}}" alt="Header Banner">
 </header>

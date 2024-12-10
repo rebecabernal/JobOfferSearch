@@ -6,7 +6,7 @@
     <div class="offers">
         <table class="table">
             <th>
-                <tr class="t" >
+                <tr>
                     <th>Title</th>
                     <th>Enterprise</th>
                     <th>Description</th>
