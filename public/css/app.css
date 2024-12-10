@@ -1,49 +1,24 @@
-body{
+body {
     display: flex;
     flex-flow: column;
+    background-color: rgb(255, 225, 117);
     margin: 0px;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    background-color: #3c7f72;
-}
-header img{
-    min-width: none;
-    max-width: 500px;
+th,tr:hover {
+    cursor: auto;
+    background-color: rgb(255, 211, 50);
+    color: #000000;
 }
 
-
-
-footer{
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
-    align-items: center;
-    background-color:#3c7f72;
-    margin: 0px;
+tr:hover {
+    background-color: #6d2a009a;
+    color: #ffffff;
+    cursor: pointer;
 }
 
-p{
-    justify-content: center;
-    align-items: center;
+table{
+
+    border-collapse: collapse;
 }
-
-.icon{
-    padding-inline: 5px;
-    margin-top: 15px;
-    width: 30px;
-    filter: drop-shadow(15px 15px 15px #0c3029)
-            drop-shadow(5px 5px 5px #218470)
-            drop-shadow(-3px -3px 2px #60ffdf);
-
-    border-radius: 10px; 
-    transition: box-shadow 0.3s; /* Smooth transition for hover effect */
-}   
-
-.shadow-effect:hover {
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
-}
-
 

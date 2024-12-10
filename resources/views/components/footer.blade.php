@@ -1,6 +1,6 @@
 <footer>
     <div class="links">
-        <a href="mailto:rebecabernalmesa@gmail.com" target="_blank">
+        <a href="mailto:rebecabernalmesa@gmail.com">
         <img class="icon" src="{{ asset('css/img/gmailImg.webp')}}" alt="Gmail Icon"></a>
         <a href="https://github.com/rebecabernal/rebecabernal">
         <img class="icon" src="{{ asset('css/img/githubImg.png')}}" alt="GitHub Icon"></a>

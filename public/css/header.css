@@ -1,0 +1,29 @@
+
+.header {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    text-align: center;
+    background-color: #3c7f72;
+    padding: 5px;
+    align-items: center;
+}
+
+.title {
+    grid-column: 2;
+    font-family: 'KAKURO', sans-serif;
+    font-size: 50px;
+    color: #fbc522;
+    filter: drop-shadow(3px 3px 3px #005746) drop-shadow(0px 0px 0px #6affe1)
+    drop-shadow(-3px -3px 3px #005746);
+
+    border-radius: 10px;
+    transition: box-shadow 0.1s; 
+}
+
+.search {
+    grid-column: 1;
+    width: 100px;
+    height: 100px;
+}
+
+
