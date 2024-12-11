@@ -88,7 +88,7 @@ Before you start to read how to install the project you'll need these requiremen
 
 1. Clone this repository:
 ```
- https://github.com/talenaa/jobSearchApp.git
+ https://github.com/rebecabernal/JobOfferSearch.git
 ```
 
 2. Install **Composer** and **NPM**
@@ -101,7 +101,7 @@ npm install
 
 3. Create a .env file copying everything inside the existing file .env.example and modify the following lines:
 * DB_CONNECTION=mysql
-* DB_DATABASE=jobSearch
+* DB_DATABASE=job
 
 4. Create a database in **MySQL**
 
@@ -205,7 +205,7 @@ php artisan test
 " alt="tests screenshot" width="800"/>
 </p>
 
-<p align="center">These are all my tests passed. I tested the web, the API CRUD, the feedback CRUD, the FeedbackModel, also the create and edit view.</p>
+<p align="center">These are all my tests passed. I tested the web, the API CRUD, the feedback CRUD and the FeedbackModel.</p>
 
 ***
 
