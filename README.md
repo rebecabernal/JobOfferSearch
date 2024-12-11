@@ -59,7 +59,8 @@ Take a look at how my project turned out.
 
 ## Project Diagrams (BBDD)
 
-![image](https://github.com/user-attachments/assets/b4eef6c7-3c8e-4cf5-8f21-576eb7b26f49)
+![relationtable](https://github.com/user-attachments/assets/640f0c23-126b-469d-a918-94719c2d5321)
+
 
 The diagram I did for my database in **DrawSQL**.
 
