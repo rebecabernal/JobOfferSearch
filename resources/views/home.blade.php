@@ -4,19 +4,17 @@
 
 
     <div class="offers">
-        <table class="table">
-            <th>
+        <table class="tableOffer">
                 <tr>
-                    <th>Title</th>
-                    <th>Enterprise</th>
-                    <th>Description</th>
-                    <th>Status</th>
-                    <th>Applied</th>
-                </tr>
-            </th>
+                    <th class="col">Title</th>
+                    <th class="col">Enterprise</th>
+                    <th class="col">Description</th>
+                    <th class="col">Status</th>
+                    <th class="col">Applied</th>
+                </tr>            
             <tb>
                 @foreach ($offers as $offer)
-                        <tr class="row" data-href="{{route('show', $offer->id)}}">
+                        <tr class="trOffer row" data-href="{{route('show', $offer->id)}}">
                             <td>{{$offer->title}}</td>
                             <td>{{$offer->enterprise}}</td>
                             <td>{{$offer->description}}</td>

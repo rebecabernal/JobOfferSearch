@@ -7,5 +7,5 @@
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
         <img class="icon" src="{{ asset('css/img/linkedinImg.png')}}" alt="Linkedin Icon"></a>
     </div>
-    <p>Rebeca Bernal © 2024. All Rights Reserved.</p>
+    <p class="copyright">Rebeca Bernal © 2024. All Rights Reserved.</p>
 </footer>

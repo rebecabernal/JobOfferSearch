@@ -1,0 +1,30 @@
+.newsTable{
+    border-collapse: collapse;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-content:center;
+    padding: 10px;
+}
+
+.th{
+    border-radius: 15px;
+    background-color: rgb(255, 200, 0);
+    color: rgb(184, 49, 0);
+    text-align: center;
+    font-family: 'KAKURO', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.td{
+    padding: 7px;
+}
+
+.comments{  
+    font-size: 30px;
+    color: rgb(184, 49, 0);
+    -webkit-text-stroke: 0.5px rgb(75, 19, 0);
+    text-align: center;
+    font-family: 'KAKURO', sans-serif;
+}
