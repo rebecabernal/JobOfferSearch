@@ -202,8 +202,8 @@ php artisan test
 <p align="center">This is what you should see after putting the command.</p>
 
 <p align="center">
- <img src="https://github.com/user-attachments/assets/1fec586c-d1ee-4db9-8178-65e67708af62
-" alt="tests screenshot" width="800"/>
+
+ <img src="https://github.com/user-attachments/assets/0f6dde56-8c14-4428-aba5-fc4e5021a304" alt="tests screenshot" width="800"/>
 </p>
 
 <p align="center">These are all my tests passed. I tested the web, the API CRUD, the feedback CRUD and the FeedbackModel.</p>
@@ -222,9 +222,9 @@ php artisan test --coverage-html=coverage-report
 ***
 
 This will add a folder called "coverage-report", go to the folder, go to the index.html, and then open with live server. After that you should see this page:
+![Captura de pantalla 2024-12-11 120502](https://github.com/user-attachments/assets/7563e042-677e-4673-b147-5961ae390b3b)
 
-![Screenshot 2024-12-11 012135](![image](https://github.com/user-attachments/assets/a7c55e7d-63bc-413c-a128-52a700c76f46)
-)
+
 ***
 
 ## Contact and information
@@ -232,7 +232,7 @@ This will add a folder called "coverage-report", go to the folder, go to the ind
 >[!NOTE]
 >Please understand that i'm still learning, not everything will look or be perfect. Thank you for the attention.
 
-If you want to contact me here's my gmail: talenabarbosa7@gmail.com
+If you want to contact me here's my gmail:rebecabernalmesa@gmail.com
 ***
 
 ## Languages and tools I used in this project
