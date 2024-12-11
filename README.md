@@ -132,7 +132,7 @@ You'll see an url that is going to take you to a website.
 >[!NOTE]
 >Since we have two interlinked tables, each one of them has their own CRUD, this firsts endpoints are from the offers table.
 >
->In the offers table we have: title, enterprise, description, workspace, status and two timestamps that are created_at and updated_at.
+>In the offers table we have: title, enterprise, description, status and created_at timestamp.
 ***
 
 <p align="center">Endpoints (Offers table)</p> 
@@ -202,7 +202,7 @@ php artisan test
 <p align="center">This is what you should see after putting the command.</p>
 
 <p align="center">
- <img src="![image](https://github.com/user-attachments/assets/1fec586c-d1ee-4db9-8178-65e67708af62)
+ <img src="https://github.com/user-attachments/assets/1fec586c-d1ee-4db9-8178-65e67708af62
 " alt="tests screenshot" width="800"/>
 </p>
 
